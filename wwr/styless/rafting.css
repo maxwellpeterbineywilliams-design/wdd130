@@ -34,6 +34,10 @@ nav,p,section,article{
 }
 .socialmedia a {
     text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    border: 1px solid var(--primary-color);
+    margin: 0 8px;
 }
 .hero{
     position: relative;
