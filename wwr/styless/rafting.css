@@ -41,6 +41,8 @@ nav,p,section,article{
 }
 .hero{
     position: relative;
+}
+.hero{
     border: #232322 1px solid;
     margin: 1rem;
     box-sizing: border-box;
@@ -54,11 +56,15 @@ nav,p,section,article{
 }
 .hero h1{
     position: absolute;
+}
+.hero h1{
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
 }
 .hero article{
     position: absolute;
+}
+.hero article{          
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
 
