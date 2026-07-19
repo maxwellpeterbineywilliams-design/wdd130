@@ -51,7 +51,7 @@ h1{
     text-align: right;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color:#da6b6b;
+    color:var(--secondary-color);
     
 }
 article{
@@ -63,5 +63,8 @@ article{
 }
 .hero article img{
     float: right;
-    width: 200px;
+    width: 125px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
