@@ -2,7 +2,7 @@
     --primary-color: #800033;
     --secondary-color: rgb(71, 165, 42);
     --accent1-color:blue;
-    --accent2-color:yellow;
+    --accent2-color:rgb(71, 71, 2);
     --head-font: times new roman;
     --body-font: Arial, Helvetica, sans-serif;; 
 }
@@ -26,7 +26,7 @@ header,main,footer{
 }
 h1,h2{
     font-family: var(--head-font);
-    color:var(--primary-color);
+    color:var(--secondary-color);
 }
 nav,p,section,article{
     margin: 16px;
@@ -74,7 +74,7 @@ h1{
     top: 10px;
     width: 50%;
     padding: 16px;
-    text-align: right;
+    text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
     color:var(--secondary-color);
@@ -93,4 +93,10 @@ article{
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
