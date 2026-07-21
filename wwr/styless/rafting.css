@@ -8,12 +8,12 @@
 }
 header{
     background-color: var(--primary-color);
-    color: var(--accent2-color)
+    color: var(--secondary-color);
 }
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 
 }
 body{
