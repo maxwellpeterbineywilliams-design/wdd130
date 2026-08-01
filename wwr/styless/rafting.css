@@ -115,9 +115,9 @@ nav{
 
 }
 section{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    
     
 }
 figure{
