@@ -44,10 +44,9 @@ nav,p,section,article{
     display: flex;
     flex-direction: row-reverse;
 }
+
 .hero{
     position: relative;
-}
-.hero{
     border: #232322 1px solid;
     margin: 1rem;
     box-sizing: border-box;
@@ -60,17 +59,14 @@ nav,p,section,article{
     margin:auto;
 }
 .hero h1{
-    position: relative;
-}
-.hero h1{
     position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
 }
-.hero article{
-    position: relative;
-}
-.hero article{          
+
+.hero article{    
+    float: right;
+    position: absolute;      
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1rem;
 
@@ -100,19 +96,11 @@ article{
     margin: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.hero article img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
 nav{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-
-
 }
 section{
     display: flex;
