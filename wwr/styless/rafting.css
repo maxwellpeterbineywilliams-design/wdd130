@@ -41,6 +41,8 @@ nav,p,section,article{
     color: var(--accent2-color);
     border: 1px solid var(--primary-color);
     margin: 0 8px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 .hero{
     position: relative;
@@ -117,5 +119,19 @@ section{
     grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     
-    
+}
+figure{
+    border: #800033;
+    display: flex;
+    flex-shrink: var(--secondary-color);
+    padding: 3px;
+    margin: auto;
+    max-width: 100px;
+}
+figcaption {
+  background-color: #222222;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
