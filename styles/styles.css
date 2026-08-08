@@ -10,7 +10,7 @@ main{
     align-items: center;
     text-align: center;
     font-size: var(--body-font);
-    font-family: var(--body-font);
+    font-family: var(--head-font);
     color:var(--accent1-color);
 }
 
@@ -25,10 +25,10 @@ main{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
 
 }
 nav a{
-    display: flex;
     color: white;
     padding: 20px;
 }
@@ -61,7 +61,6 @@ aside h2 {
     position:absolute;
     top: 0;
 
-    
 }
 main img{
     width: 180px;
