@@ -7,6 +7,10 @@
     --body-font: Arial, Helvetica, sans-serif;; 
 }
 header{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
     background-color: var(--primary-color);
     color: var(--accent2-color)
 }
@@ -17,6 +21,9 @@ header{
 
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: var(--body-font);
     color:var(--accent1-color);
 }
