@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: var(--body-font);
+    font-family: var(--body-font);
+    color:var(--accent1-color);
+}
+
 
 .flex{
     flex-direction: row;
@@ -23,6 +33,7 @@ nav a{
     padding: 20px;
 }
 h1 {
+    font-size: 3rem;
     color: darkblue;
 }
 img {
