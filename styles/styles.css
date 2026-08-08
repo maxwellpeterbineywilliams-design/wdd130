@@ -49,9 +49,6 @@ p {
     padding: 2rem; 
 }
 
-aside{
-    width: 20rem;
-}
 aside img{
     width: 200px;
     height: auto;
@@ -109,10 +106,6 @@ header, .grid, footer{
 .grid{
     display: grid;
    align-items: center;
-}
-main{
-    grid-column: 2/3;
-    margin: 1rem;
 }
 aside{
     width:20rem;
