@@ -20,12 +20,25 @@ header{
     box-sizing: 0;
 
 }
-body{
+.body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size: var(--body-font);
     font-family: var(--body-font);
     color:var(--accent1-color);
+}
+.hero{
+    position: relative;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
 }
 header,main,footer{
     width:840px;
@@ -46,9 +59,11 @@ nav,p,section,article{
     position: relative;
 }
 .hero img{
-    display: block;
-    width: 100%;
+    position: absolute;
+    display: flex;
+    width: 2000px;
     height: auto;
+    z-index: -1;
 }
 
 section{
