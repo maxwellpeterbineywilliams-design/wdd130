@@ -1,30 +1,116 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
 
+
+:root {
+    --primary-color: darkblue;
+    --text-color: white;
+    --heading-color: darkblue;
+    --border-color: black;
+    --light-background: #f9f9f9;
+    --aside-text-color: #333;
+    --subtle-border: rgb(0 0 0 / 0.2);
+    --shadow-color: gray;
+
+    --main-width: 840px;
+    --image-width: 150px;
+    --aside-image-width: 200px;
+
+    --small-padding: 2px;
+    --medium-padding: 10px;
+    --large-padding: 20px;
+
+    --image-shadow: 0 0 30px gray;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(--medium-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--text-color);
     display: block;
-    padding: 20px;
+    padding: var(--large-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
 }
 
 img {
-    width: 150px;
-    height:auto;
-    border:1px solid black
-    padding: 2px; 
-    box-shadow: 0 0 30px gray;
+    width: var(--image-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: var(--small-padding);
+    box-shadow: var(--image-shadow);
+}
+
+main {
+    max-width: var(--main-width);
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid var(--subtle-border);
+    padding: 1rem;
+    background-color: var(--light-background);
+    color: var(--aside-text-color);
+    text-align: center;
+}
+
+aside img {
+    width: var(--aside-image-width);
+    height: auto;
+}
+
+main img {
+    width: var(--image-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--image-shadow);
+    padding: var(--small-padding);
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid var(--subtle-border);
+    text-align: center;
+}
+
+}
+
+
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(--medium-padding);
+}
+
+nav a {
+    color: var(--text-color);
+    display: block;
+    padding: var(--large-padding);
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+img {
+    width: var(--image-width);
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: var(--small-padding);
+    box-shadow: var(--image-shadow);
 }
 
 
 main {
-   max-width: 840px
+   max-width: var(--main-width)
 }
 
 aside {
@@ -46,20 +132,21 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
-    box-shadow: 0 0 30px gray;
-    padding: 2px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--image-shadow);
+    padding: var(--small-padding);
 }
 
 p {
     padding: 0;
+}
 
 }
 
 footer {
 
     margin-top: 15px;
-    border-top: 1px solid rgb(0 0 0 / 0.2);
+    border-top: 1px solid var(--subtle-border);
     text-align:center;
 }
 
