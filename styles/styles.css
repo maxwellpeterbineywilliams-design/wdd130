@@ -1,26 +1,41 @@
 
-
 :root {
+    /* Colors */
     --primary-color: darkblue;
     --text-color: white;
-    --heading-color: darkblue;
     --border-color: black;
     --light-background: #f9f9f9;
     --aside-text-color: #333;
     --subtle-border: rgb(0 0 0 / 0.2);
     --shadow-color: gray;
+    --black-color: #000;
 
+    /* Sizes */
     --main-width: 840px;
+    --aside-width: 20rem;
     --image-width: 150px;
     --aside-image-width: 200px;
 
+    /* Spacing */
     --small-padding: 2px;
     --medium-padding: 10px;
     --large-padding: 20px;
+    --small-margin: 10px;
+    --medium-margin: 15px;
 
-    --image-shadow: 0 0 30px gray;
+    /* Borders and shadows */
+    --image-border: 1px solid var(--border-color);
+    --image-shadow: 0 0 30px var(--shadow-color);
 }
 
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
 nav {
     background-color: var(--primary-color);
     padding: var(--medium-padding);
@@ -32,24 +47,33 @@ nav a {
     padding: var(--large-padding);
 }
 
+/* Headings */
 h1 {
-    color: var(--heading-color);
+    color: var(--primary-color);
 }
 
+/* Images */
 img {
     width: var(--image-width);
     height: auto;
-    border: 1px solid var(--border-color);
+    border: var(--image-border);
     padding: var(--small-padding);
     box-shadow: var(--image-shadow);
 }
 
+/* Main content */
 main {
     max-width: var(--main-width);
 }
 
+main img {
+    float: right;
+    margin: 0 0 var(--small-margin) var(--small-margin);
+}
+
+/* Aside section */
 aside {
-    width: 20rem;
+    width: var(--aside-width);
     margin: 1rem;
     border: 1px solid var(--subtle-border);
     padding: 1rem;
@@ -63,91 +87,23 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: var(--image-width);
-    height: auto;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--image-shadow);
-    padding: var(--small-padding);
-}
-
+/* Paragraphs */
 p {
     padding: 0;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: var(--medium-margin);
     border-top: 1px solid var(--subtle-border);
     text-align: center;
 }
 
-}
-
-
-
-nav {
-    background-color: var(--primary-color);
+/* Class selectors */
+.box {
+    border: 1px solid var(--border-color);
     padding: var(--medium-padding);
+    margin: var(--medium-padding);
+    background-color: var(--light-background);
+    color: var(--black-color);
 }
-
-nav a {
-    color: var(--text-color);
-    display: block;
-    padding: var(--large-padding);
-}
-
-h1 {
-    color: var(--heading-color);
-}
-
-img {
-    width: var(--image-width);
-    height: auto;
-    border: 1px solid var(--border-color);
-    padding: var(--small-padding);
-    box-shadow: var(--image-shadow);
-}
-
-
-main {
-   max-width: var(--main-width)
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--border-color);
-    box-shadow: var(--image-shadow);
-    padding: var(--small-padding);
-}
-
-p {
-    padding: 0;
-}
-
-}
-
-footer {
-
-    margin-top: 15px;
-    border-top: 1px solid var(--subtle-border);
-    text-align:center;
-}
-
-    
