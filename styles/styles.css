@@ -1,6 +1,6 @@
 
 :root {
-    /* Colors */
+    
     --primary-color: darkblue;
     --text-color: white;
     --border-color: black;
@@ -10,33 +10,36 @@
     --shadow-color: gray;
     --black-color: #000;
 
-    /* Sizes */
+    
     --main-width: 840px;
     --aside-width: 20rem;
     --image-width: 150px;
     --aside-image-width: 200px;
 
-    /* Spacing */
+
     --small-padding: 2px;
     --medium-padding: 10px;
     --large-padding: 20px;
     --small-margin: 10px;
     --medium-margin: 15px;
 
-    /* Borders and shadows */
+    
     --image-border: 1px solid var(--border-color);
     --image-shadow: 0 0 30px var(--shadow-color);
 }
 
-/* Universal selector */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation */
+
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--primary-color);
     padding: var(--medium-padding);
 }
@@ -44,15 +47,18 @@ nav {
 nav a {
     color: var(--text-color);
     display: block;
-    padding: var(--large-padding);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-/* Headings */
+
 h1 {
+    border: bottom;
     color: var(--primary-color);
 }
 
-/* Images */
+
 img {
     width: var(--image-width);
     height: auto;
@@ -61,8 +67,11 @@ img {
     box-shadow: var(--image-shadow);
 }
 
-/* Main content */
+
 main {
+    display: grid;
+    grid-column: 2/3;
+    margin: 1rem;
     max-width: var(--main-width);
 }
 
@@ -73,13 +82,17 @@ main img {
 
 /* Aside section */
 aside {
-    width: var(--aside-width);
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 20rem;
     margin: 1rem;
     border: 1px solid var(--subtle-border);
     padding: 1rem;
     background-color: var(--light-background);
     color: var(--aside-text-color);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -87,23 +100,29 @@ aside img {
     height: auto;
 }
 
-/* Paragraphs */
+
 p {
     padding: 0;
 }
 
-/* Footer */
-footer {
+header, .grid, footer {
+    max-width: 840px;
+    margin: auto;
     margin-top: var(--medium-margin);
     border-top: 1px solid var(--subtle-border);
     text-align: center;
 }
 
-/* Class selectors */
+
 .box {
     border: 1px solid var(--border-color);
     padding: var(--medium-padding);
     margin: var(--medium-padding);
     background-color: var(--light-background);
     color: var(--black-color);
+}
+.grid {
+    display: grid;
+    align-items: center;
+
 }

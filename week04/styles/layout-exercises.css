@@ -22,12 +22,17 @@ div {
 }
 
 .flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: #aba;
     /* write declarations here */
 
 }
 
 .grid {
+    display: grid;
+    
     background-color: #abb;
     /* enter declarations here */
 
