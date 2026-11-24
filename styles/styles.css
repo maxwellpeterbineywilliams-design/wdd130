@@ -42,6 +42,7 @@ nav {
     align-items: center;
     background-color: var(--primary-color);
     padding: var(--medium-padding);
+    
 }
 
 nav a {
@@ -50,6 +51,7 @@ nav a {
     padding: 0.5rem;
     font-size: 1.5rem;
     font-weight: 700;
+    text-decoration: none;
 }
 
 
